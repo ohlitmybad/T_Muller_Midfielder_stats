@@ -703,10 +703,71 @@ svg text
     </div>
   </div></div>
 </header>
+    <div class="position-toggle-container">
+        <div class="position-toggle">
+            <a href="https://datamb.football/T_Muller_Midfielder_stats" class="position-btn active">Midfielder</a><a href="https://datamb.football/T_Muller_Winger_stats" class="position-btn">Winger</a>
+        </div>
+    </div>
+    
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7677714701428206"
      crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-</head>
+
+    <style>
+    /* Position Toggle Styles */
+    .position-toggle-container {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 8px 0;
+        padding: 0 20px;
+    }
+    
+    /* Mobile responsive */
+    @media only screen and (max-width: 1048px) {
+        .position-toggle-container {
+            margin: 8px 0 -25px 0;
+        }
+    }
+    
+    .position-toggle {
+        display: flex;
+        background: white;
+        border: 1px solid #e9ecef;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        gap: 2px;
+        padding: 2px;
+    }
+    
+    .position-btn {
+        padding: 8px 16px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #6c757d;
+        transition: all 0.15s ease-in-out;
+        text-decoration: none;
+        display: inline-block;
+        min-width: 80px;
+        text-align: center;
+        white-space: nowrap;
+        border-radius: 18px;
+        box-sizing: border-box;
+    }
+    
+    .position-btn.active {
+        background: #135eb7;
+        color: white;
+        text-decoration: none;
+        padding: 8px 18px;
+        pointer-events: none;
+    }
+    </style>
+    </head>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSBMXX80EF"></script>
 <script>
